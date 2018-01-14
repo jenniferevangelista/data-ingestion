@@ -1,5 +1,5 @@
 
-## initialize pyspark 1.6 with this jars because this version not support operations with csv
+#initialize pyspark 1.6 with this jars because this version not support operations with csv
 sudo -u hdfs pyspark --jars /home/cloudera/Desktop/commons-csv-1.4.jar,/home/cloudera/Desktop/spark-csv_2.10-1.5.0.jar,/home/cloudera/Desktop/spark-sql_2.11-1.4.1.jar,/home/cloudera/Desktop/univocity-parsers-2.4.1.jar
 
 #if usign the cloudera vm no required  import hivecontext
