@@ -13,8 +13,8 @@ dataFrame = sqlContext.read.format('com.databricks.spark.csv').options(delimiter
 dataFrame.show(5)
 
 #print schema
-df_blc.printSchema()
+dataFrame.printSchema()
 
 #loading csv in hive table
 sqlContext.registerDataFrameAsTable(dataframe, 'database.table')
-df_blc.write.insertInto("nme.blceresult2", mode="overwrite")
+dataFrame.write.insertInto("database.table", mode="overwrite")
